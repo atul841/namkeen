@@ -1,0 +1,425 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.dealership-btn {
+  background-color: #2e00b8;
+  color: white;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.dealership-btn:hover {
+  background-color: #3c12d2;
+}
+
+/* Carousel */
+.carousel-item {
+  text-align: center;
+  background: linear-gradient(to top, #f5f5f5, #dff1ff);
+  padding: 50px 0;
+}
+
+.carousel-item img {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.product-caption {
+  font-size: 28px;
+  font-weight: 600;
+  color: #7c4d00;
+  margin-top: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.slide-bg {
+  height: 700px;
+  width: 100%;
+  max-width: 1700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-inner {
+  max-width: 1700px;
+}
+
+@media (max-width: 768px) {
+  .slide-bg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-bg {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-img {
+    width: 40px;
+    height: 50px;
+  }
+}
+
+/* the next part about section start  */
+.hot-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hot-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(to right, yellow, orange);
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-box {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* .product-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+
+.product-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: linearMoveX 6s linear infinite;
+}
+
+@keyframes linearMoveX {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes moveLabel {
+  0% {
+    left: -60px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-box {
+    width: 45%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-box {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hot-heading {
+    font-size: 28px;
+  }
+}
+
+
+/* the end oof the section part  */
+
+/* about ka section ka css start ho gaya hai  */
+.about-section {
+  background-color: #f5b400;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.container-about {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.know-more-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #280083;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.know-more-btn:hover {
+  background-color: #3a00b3;
+}
+
+.logo-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.logo-pulse {
+  width: 300px;
+  animation: pulseLogo 3s ease-in-out infinite;
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content h2 {
+    font-size: 28px;
+  }
+
+  .logo-pulse {
+    width: 200px;
+    margin-top: 20px;
+  }
+}   
+/* css ka section end ho gaya hai  */ 
+
+/* about section ke bad ka css start  */
+.explore-products {
+  background-color: #fff;
+}
+
+.section-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: red;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: gold;
+  border-radius: 5px;
+  margin: 8px auto 0;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.product-card {
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-name {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+/* Background Colors */
+.red-bg {
+  background: radial-gradient(circle, #f44336 30%, #b71c1c 90%);
+}
+
+.blue-bg {
+  background: radial-gradient(circle, #2196f3 30%, #0d47a1 90%);
+}
+
+.yellow-bg {
+  background: radial-gradient(circle, #ffeb3b 30%, #f57f17 90%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+  }
+
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}  
+/* about section ke bad ka section end  */
+
+/* login from ka page ka css start  */
+.dealership-section {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.chips-image {
+  max-width: 400px;
+} 
+@media screen and (max-width:500px) {
+  
+  .chips-image{ 
+    width: 200px;
+  }
+}
+
+.dealership-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #f26522;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step-indicator {
+  gap: 10px;
+}
+
+.step {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #4a00e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #4a00e0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background: #4a00e0;
+  color: #fff;
+}
+
+.next-btn {
+  background: #4a00e0;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #36009c;
+}
+/* loging from page ka css end  */
