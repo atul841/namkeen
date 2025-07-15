@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -333,7 +336,7 @@ body {
   padding: 15px;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Pacifico', cursive;
+  font-family:  cursive;
   color: white;
 }
 
@@ -423,3 +426,87 @@ body {
   background: #36009c;
 }
 /* loging from page ka css end  */
+
+/* contact page css start */
+.contact-header {
+  background-color: #e1250d; /* bright red */
+}
+
+.breadcrumb-text {
+  font-size: 1.1rem;
+}
+
+.contact-header a:hover {
+  text-decoration: underline;
+}
+.contact-header h1 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* contact page css end */
+
+/* conatct information emial phone address css start */
+.section-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+}
+
+.underline {
+  width: 100px;
+  margin-top: -10px;
+}
+
+.info-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  color: #555;
+  font-size: 1rem;
+}
+/* conatct page email phone address end  */
+
+/* form ke page ka css start ho gaya hai  */
+.get-in-touch input,
+.get-in-touch textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.get-in-touch button {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* form ke page ka css end ho gya hai yaha pe  */
+
+/* location ke page ka css start ho gaya hai  */
+iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* location ke page ka css end ho gaya hai  */
